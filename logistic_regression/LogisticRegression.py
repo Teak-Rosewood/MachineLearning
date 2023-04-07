@@ -63,7 +63,7 @@ class LogisticRegression:
             db = grads["db"]
             self.w = self.w - self.learning_rate * dw
             self.b = self.b - self.learning_rate * db
-            if i % 10000 == 0:
+            if i % 100000 == 0:
                 self.costs.append(cost)
                 print ("Cost after iteration %i: %f" %(i, cost))
         
